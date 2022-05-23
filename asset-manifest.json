@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hosting-accounts/static/css/main.b4c143f1.css",
-    "main.js": "/hosting-accounts/static/js/main.31d1cdab.js",
+    "main.js": "/hosting-accounts/static/js/main.3087f4fb.js",
     "static/js/787.dd8018bb.chunk.js": "/hosting-accounts/static/js/787.dd8018bb.chunk.js",
     "static/media/mails.png": "/hosting-accounts/static/media/mails.e4bec7c9a337d3b7f3ec.png",
     "static/media/badge.png": "/hosting-accounts/static/media/badge.7a09e2b700994fb5ff78.png",
@@ -15,11 +15,11 @@
     "static/media/close.svg": "/hosting-accounts/static/media/close.2db4e4e280c0340ca0aa.svg",
     "static/media/arrow-up.svg": "/hosting-accounts/static/media/arrow-up.1b70a06730eb94b228dff18ee039ab22.svg",
     "main.b4c143f1.css.map": "/hosting-accounts/static/css/main.b4c143f1.css.map",
-    "main.31d1cdab.js.map": "/hosting-accounts/static/js/main.31d1cdab.js.map",
+    "main.3087f4fb.js.map": "/hosting-accounts/static/js/main.3087f4fb.js.map",
     "787.dd8018bb.chunk.js.map": "/hosting-accounts/static/js/787.dd8018bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4c143f1.css",
-    "static/js/main.31d1cdab.js"
+    "static/js/main.3087f4fb.js"
   ]
 }
