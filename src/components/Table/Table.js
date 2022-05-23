@@ -7,7 +7,7 @@ import './Table.css'
 
 import question from "../../images/question.png"
 
-function Table() {
+function Table({list}) {
   return (
     <div className="table">
       <div className="table__up">
@@ -17,7 +17,7 @@ function Table() {
       <table cellSpacing="0" className="table__table">
         <TableHeader />
         <TableBody /> 
-        <TableFooter />
+        <TableFooter list={list}/>
       </table>
     </div>
   )

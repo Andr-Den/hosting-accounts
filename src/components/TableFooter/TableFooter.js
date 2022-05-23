@@ -4,26 +4,11 @@ import "./TableFooter.css"
 
 import cancel from "../../images/cancel.png"
 
-const domainsList = [
-  {
-    title: 'shoky-yoku.ru',
-    description: 'shoky-yoku.ru (alias)'
-  },
-  {
-    title: 'srv164042.hoster-test.ru',
-    description: 'srv164042.hoster-test.ru (alias)'
-  },
-  {
-    title: 'сёкуёкую.рф',
-    description: 'www.сёкуёкую.рф'
-  },
-]
-
-function TableFooter() {
+function TableFooter({list}) {
   const [domains, setDomains] = React.useState(JSON.parse(localStorage.getItem('domains')));
 
   React.useEffect(() => {
-    localStorage.setItem('domains', JSON.stringify(domainsList))
+    localStorage.setItem('domains', JSON.stringify(list))
   })
 
   function handleDelete(index) {

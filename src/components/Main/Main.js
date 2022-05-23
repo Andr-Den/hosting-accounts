@@ -6,13 +6,13 @@ import Table from "../Table/Table";
 
 import './Main.css'
 
-function Main() {
+function Main({list}) {
   return (
     <section>
       <Container>
         <div className="main__items">
           <Menu />
-          <Table />
+          <Table list={list}/>
           <Legend />
         </div>
       </Container>
