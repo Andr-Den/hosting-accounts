@@ -2,7 +2,8 @@ import React from "react";
 
 import './Menu.css'
 
-import plus from "../../images/plus.png"
+import arrow from '../../images/arrow-up.svg'
+import plus from "../../images/plus-white.png"
 
 const submenuItems = [
   "VDS/VPS", "Домены/Почта", "Сертификаты", "Хостинг", "Реклама и Продвижение"
@@ -30,16 +31,18 @@ function Menu() {
             <button className="menu__button"><img alt="" src={plus} className="menu__image" /></button>
             <span className="menu__text">ФИНАНСЫ</span>
           </li>
-          <li className="menu__item">
-              <button className={`${openMenu ? 'menu__button_click' : 'menu__button'}`} onClick={handleToggleMenu}>
-                {openMenu ? '' : <img alt="" src={plus} className="menu__image" />}
+          <li className="menu__active">
+            <div className="menu__item menu__item_drop">
+              <button className={`menu__button ${openMenu ? 'menu__button_click' : ''}`} onClick={handleToggleMenu}>
+                {openMenu ? <img alt="" src={arrow} className="menu__image" /> : <img alt="" src={plus} className="menu__image" />}
               </button>
-              <span className="menu__text">УПРАВЛЕНИЕ</span>
-            <ul className={`${openMenu ? 'menu__submenu_open' : 'menu__submenu'}`}>
-            {submenuItems.map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
+              <span className={`menu__text ${openMenu ? 'menu__text_open' : ''}`}>УПРАВЛЕНИЕ</span>
+            </div>
+              <ul className={`menu__submenu ${openMenu ? 'menu__submenu_open' : ''}`}>
+                {submenuItems.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
           </li>
         </div>
     </ul>

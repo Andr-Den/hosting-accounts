@@ -13,8 +13,14 @@
   border-bottom: 1px solid #000000;
 }
 
-.menu__item_active {
+.menu__item_drop {
+  border: none;
+}
+
+.menu__active {
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .menu__item:first-child {
@@ -28,7 +34,14 @@
 .menu__button {
   padding: 0;
   border: none;
-  background-color: #FFFFFF;
+  border-radius: 9999px;
+  background-color: #F18C4F;
+  width: 20px;
+  height: 20px;
+}
+
+.menu__button_click {
+  background-color: #FD9E00;
 }
 
 .menu__image {
@@ -43,8 +56,17 @@
   color: #F18C4F;
 }
 
+.menu__text_open {
+  color: #FD9E00;
+}
+
 .menu__submenu {
   display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .menu__submenu_open {
