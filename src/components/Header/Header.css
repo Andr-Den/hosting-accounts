@@ -44,6 +44,10 @@
   width: 18px;
 }
 
+.header__icon_link {
+  cursor: pointer;
+}
+
 .header__text_primary {
   color: #F18C4F;
   margin-left: 5px;

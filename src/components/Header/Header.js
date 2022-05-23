@@ -17,7 +17,7 @@ function Header() {
           <ul className="header__list">
             <ul className="header__sublist">
               <li className="header__item">
-                <img src={arrowGrey} alt="back" className="header__icon  header__icon_rotate"/>
+                <img src={arrowGrey} alt="back" className="header__icon  header__icon_rotate header__icon_link"/>
                 <span className="header__text_white">ГЛАВНАЯ</span>
               </li>
               <li className="header__item"><span className="header__text_primary">ПАРТНЕРСКАЯ ПРОГРАММА</span></li>
@@ -35,16 +35,16 @@ function Header() {
                 <span className="header__text_secondary">Основной л/с: 204.02 руб.</span>
               </li>
               <li className="header__item header__item_secondary">
-                <img src={mails} alt="mail" className="header__icon"/>
+                <img src={mails} alt="mail" className="header__icon header__icon_link"/>
                 <span className="header__text_primary">0</span>
               </li>
               <li className="header__item header__item_secondary">
-                <img src={bag} alt="bag" className="header__icon"/>
+                <img src={bag} alt="bag" className="header__icon header__icon_link"/>
                 <span className="header__text_primary">0</span>
               </li>
               <li className="header__item header__item_secondary">
                 <img src={arrowYellow} alt="yellow arrow" className="header__icon"/>
-                <img src={backdoor} alt="backdoor" className="header__icon"/>
+                <img src={backdoor} alt="backdoor" className="header__icon header__icon_link"/>
               </li>
             </ul>
           </ul>
