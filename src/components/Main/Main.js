@@ -6,13 +6,13 @@ import Table from "../Table/Table";
 
 import './Main.css'
 
-function Main({domainsList}) {
+function Main() {
   return (
     <section>
       <Container>
         <div className="main__items">
           <Menu />
-          <Table domainsList={domainsList}/>
+          <Table />
           <Legend />
         </div>
       </Container>

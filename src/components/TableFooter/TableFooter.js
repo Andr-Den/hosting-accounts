@@ -4,8 +4,30 @@ import "./TableFooter.css"
 
 import cancel from "../../images/cancel.png"
 
-  function TableFooter({domainsList}) {
+
+const domainsList = [
+  {
+    title: 'shoky-yoku.ru',
+    description: 'shoky-yoku.ru (alias)'
+  },
+  {
+    title: 'srv164042.hoster-test.ru',
+    description: 'srv164042.hoster-test.ru (alias)'
+  },
+  {
+    title: 'сёкуёкую.рф',
+    description: 'www.сёкуёкую.рф'
+  },
+]
+
+function TableFooter() {
   const [domains, setDomains] = React.useState(JSON.parse(localStorage.getItem('domains')) || domainsList);
+  
+  React.useEffect(() => {
+    if (!localStorage.getItem('domains')) {
+      localStorage.setItem('domains', JSON.stringify(domainsList))
+    }
+  })
 
   function handleDelete(index) {
     domains.splice(index, 1)
