@@ -31,6 +31,10 @@
   border-bottom: none;
 }
 
+.menu__item:hover {
+  cursor: pointer;
+}
+
 .menu__button {
   padding: 0;
   border: none;
@@ -42,6 +46,10 @@
 
 .menu__button_click {
   background-color: #FD9E00;
+}
+
+.menu__button:hover {
+  cursor: pointer;
 }
 
 .menu__image {
