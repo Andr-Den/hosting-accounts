@@ -8,7 +8,7 @@ import './Table.css'
 function Table() {
   return (
     <div className="table">
-      <h1>АККАУНТЫ ХОСТИНГА</h1>
+      <h1  className="table__heading">АККАУНТЫ ХОСТИНГА</h1>
     <table cellSpacing="0" className="table__table">
       <TableHeader />
       <TableBody /> 

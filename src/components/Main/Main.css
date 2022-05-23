@@ -1,4 +1,12 @@
 .main__items {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1190px){
+  .main__items {
+    flex-direction: column;
+    align-items: center;
+  }
 }
