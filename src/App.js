@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 
@@ -18,10 +19,14 @@ const domainsList = [
 ]
 
 function App() {
+  React.useEffect(() => {
+    localStorage.setItem('domains', JSON.stringify(domainsList))
+  })
+
   return (
     <div className="App">
       <Header />
-      <Main list={domainsList}/>
+      <Main/>
     </div>
   );
 }

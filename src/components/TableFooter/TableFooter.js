@@ -4,12 +4,8 @@ import "./TableFooter.css"
 
 import cancel from "../../images/cancel.png"
 
-function TableFooter({list}) {
+function TableFooter() {
   const [domains, setDomains] = React.useState(JSON.parse(localStorage.getItem('domains')));
-
-  React.useEffect(() => {
-    localStorage.setItem('domains', JSON.stringify(list))
-  })
 
   function handleDelete(index) {
     domains.splice(index, 1)
