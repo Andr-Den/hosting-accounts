@@ -1,0 +1,38 @@
+.table-footer {
+  text-align: center;
+}
+
+.table-footer__list {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.table-footer__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-footer__link {
+  color: #7887F2;
+}
+
+.table-footer__link_bold {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.table-footer__button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.table-footer__button:hover {
+  cursor: pointer;
+}
+
+.table-footer__image {
+  width: 16px;
+  height: 16px;
+}
