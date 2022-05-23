@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '../Container/Container';
+import Navigation from '../Navigation/Navigation';
 import './Header.css';
 
 import arrowGrey from "../../images/grey-arrow.png"
@@ -11,6 +12,15 @@ import coin from "../../images/coin.png"
 import mails from "../../images/mails.png"
 
 function Header() {
+  const [isMenuOpen, isSetMenuOpen] = React.useState(false);
+
+  function handleOpenMenu() {
+    isSetMenuOpen(true) 
+  }
+
+  function handleCloseMenu() {
+    isSetMenuOpen(false)
+  }
   return (
       <header className="header">
         <Container>
@@ -47,8 +57,10 @@ function Header() {
                 <img src={backdoor} alt="backdoor" className="header__icon header__icon_link"/>
               </li>
             </ul>
+            <div className="header__burger" onClick={handleOpenMenu}></div>
           </ul>
         </Container>
+        <Navigation isOpen={isMenuOpen} onClose={handleCloseMenu} pageMovies="navigation__link_active"/>
       </header>
   );
 }

@@ -53,9 +53,9 @@ function TableBody() {
         <td>0</td>
         <td><a href="*" className="table-body__link">Включен</a></td>
         <td className="table-body__actions">
-        {legendItems.map(({src, description}) => (
-            <img alt={description} src={src} className="table-body__image"/>
-        ))}
+          {legendItems.map(({src, description}) => (
+              <img alt={description} src={src} className="table-body__image"/>
+          ))}
         </td>
       </tr>
       <tr className="table__middle">

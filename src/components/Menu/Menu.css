@@ -80,3 +80,9 @@
 .menu__submenu_open {
   display: block;
 }
+
+@media screen and (max-width: 1190px){
+  .menu {
+    width: 50%;
+  }
+}

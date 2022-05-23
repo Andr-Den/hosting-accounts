@@ -4,10 +4,12 @@
 
 .table-body__start {
   text-align: center;
+  border: 1px solid #000000;
 }
 
 .table__middle {
   background-color: #DAE0E4;
+  border: none;
 }
 
 .table-body__left-col {
@@ -65,4 +67,24 @@
 .table-body__items {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+.table-body {
+  font-size: 8px;
+}
+
+.table-body__button {
+  font-size: 8px;
+}
+
+.table-body__icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 2px;
+}
+
+.table-body__lists_left {
+  margin-left: 5px;
+}
 }

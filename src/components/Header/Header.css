@@ -66,3 +66,30 @@
 .header__icon_rotate {
   transform: rotate(180deg);
 }
+
+.header__burger {
+  display: none;
+}
+
+@media screen and (max-width: 1190px){
+  .header__burger {
+      border: none;
+      background-color: rgb(95, 95, 95);
+      display: block;
+      background-image: url(../../images/burger.svg);
+      width: 44px;
+      height: 44px;
+  }
+
+  .header__sublist_secondary {
+    display: none;
+  }
+
+  .header__sublist {
+    width: 30%;
+  }
+
+  .header__list {
+    justify-content: space-around;
+  }
+}
