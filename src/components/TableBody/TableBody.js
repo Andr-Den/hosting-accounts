@@ -8,7 +8,7 @@ const firstBodyItems = [
   'Объем баз данных',
   'Объем почты',
   'Объем файлов',
-  'Комментарии',
+  'Комментарий',
   'Услуга',
   'Логин',
   'Имя хоста FTP',
@@ -19,55 +19,24 @@ const firstBodyItems = [
   'Имя хоста PgSQL', 
 ]
 
-const secondBodyItems = [
-  {
-    name: '31.28.24.122',
-  },
-  {
-    name: '10.89 Mb',
-  },
-  {
-    name: '522.43 Mb',
-  },
-  {
-    name: '141.7 Mb',
-  },
-  {
-    name: 'Нет комментариев',
-    change: true,
-    off: ''
-  },
-  {
-    name: 'Бета-SSD',
-  },
-  {
-    name: 'login',
-  },
-  {
-    name: `<a href="*" class="table-body__link">login.hoster.ru</a>`,
-  },
-  {
-    name: 'password',
-    change: true,
-    off: true
-  },
-  {
-    name: 'host',
-  },
-  {
-    name: 'password',
-    change: true,
-    off: true
-  },
-  {
-    name: 'host',
-  },
-  {
-    name: 'host',
-  },
-]
-
 function TableBody() {
+
+  const [editMode, setEditMode] = React.useState(false);
+  const [comment, setComment] = React.useState(JSON.parse(localStorage.getItem('comment')));
+  const [addInput, setAddInput] = React.useState('')
+
+  function handleEditComment() {
+    setEditMode(true)
+  }
+
+  function handleAddComment() {
+    localStorage.setItem('comment', JSON.stringify(addInput))
+    setComment(JSON.parse(localStorage.getItem('comment')))
+  }
+
+  function handleChangeAddInput(e) {
+    setAddInput(e.target.value);
+  }
 
   return (
     <tbody className="table-body">
@@ -95,14 +64,42 @@ function TableBody() {
           </ul>
         </td>
         <td colSpan="6">
-          <ul className="table-body__lists">
-            {secondBodyItems.map(({name, change, off}) => (
+           <ul className="table-body__lists">
+              <li><span>31.28.24.122</span></li>
+              <li><span>10.89 Mb</span></li>
+              <li><span>522.43 Mb</span></li>
+              <li><span>141.7 Mb</span></li>
               <li>
-                <span dangerouslySetInnerHTML={{ __html: name }} />
-                {change ? <button className="table-body__button">(Изменить)</button> : ''}
-                {off ? <button className="table-body__button">(Выключить)</button> : ''}
+                {editMode ?
+                  <form onSubmit={handleAddComment}>
+                      <input onChange={handleChangeAddInput} defaultValue={comment}/> 
+                      <button className="table-body__button">Добавить</button> 
+                    </form> : 
+                  <>
+                    <span>{comment}</span>
+                    <button className="table-body__button" onClick={handleEditComment}>(Изменить)</button>
+                  </>
+                }
+
               </li>
-            ))}
+              <li><span>Бета-SSD</span></li>
+              <li><span>login</span></li>
+              <li>
+                <a href="*" className="table-body__link">login.hoster.ru</a>
+              </li>
+              <li>
+                <span>password</span>
+                <button className="table-body__button">(Изменить)</button>
+                <button className="table-body__button">(Выключить)</button>
+              </li>
+              <li><span>host</span></li>
+              <li>
+                <span>password</span>
+                <button className="table-body__button">(Изменить)</button>
+                <button className="table-body__button">(Выключить)</button>
+              </li>
+              <li><span>host</span></li>
+              <li><span>host</span></li>
           </ul>
         </td>
       </tr>
