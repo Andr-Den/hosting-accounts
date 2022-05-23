@@ -1,0 +1,26 @@
+.legend {
+  margin-top: 70px;
+  width: 16%;
+  font-size: 14px;
+}
+
+.legend__heading {
+  border-top: 1px  solid #000000;
+}
+
+.legend__list {
+  list-style: none;
+  padding: 0;
+}
+
+.legend__item {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.legend__image {
+  width: 18px;
+  margin-right: 5px;
+}
