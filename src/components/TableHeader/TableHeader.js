@@ -6,10 +6,10 @@ function TableHeader() {
   return (
     <thead className="table__header">
           <tr>
-              <th rowspan="2">Аккаунт</th>
-              <th colspan="4">Статистика</th>
-              <th rowspan="2" className="table__big-cols">Состояние</th>
-              <th rowspan="2">Действия</th>
+              <th rowSpan="2">Аккаунт</th>
+              <th colSpan="4">Статистика</th>
+              <th rowSpan="2" className="table__big-cols">Состояние</th>
+              <th rowSpan="2">Действия</th>
           </tr>
           <tr>
               <th className="table__small-cols">Занято/<br/>Всего(Mb)</th>

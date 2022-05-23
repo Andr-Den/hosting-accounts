@@ -39,8 +39,8 @@ function Menu() {
               <span className={`menu__text ${openMenu ? 'menu__text_open' : ''}`}>УПРАВЛЕНИЕ</span>
             </div>
               <ul className={`menu__submenu ${openMenu ? 'menu__submenu_open' : ''}`}>
-                {submenuItems.map((item) => (
-                  <li>{item}</li>
+                {submenuItems.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
           </li>

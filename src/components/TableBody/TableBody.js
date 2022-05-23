@@ -54,15 +54,15 @@ function TableBody() {
         <td><a href="*" className="table-body__link">Включен</a></td>
         <td className="table-body__actions">
           {legendItems.map(({src, description}) => (
-              <img alt={description} src={src} className="table-body__image"/>
+              <img alt={description} src={src} className="table-body__image" key={description}/>
           ))}
         </td>
       </tr>
       <tr className="table__middle">
         <td>
           <ul className="table-body__lists table-body__lists_left">
-            {firstBodyItems.map((item) => (
-              <li>
+            {firstBodyItems.map((item, index) => (
+              <li key={index}>
                 <span className="table-body__left-col">{item}</span>
               </li>
             ))}
@@ -86,7 +86,6 @@ function TableBody() {
                     <button className="table-body__button" onClick={handleEditComment}>(Изменить)</button>
                   </>
                 }
-
               </li>
               <li><span>Бета-SSD</span></li>
               <li><span>login</span></li>

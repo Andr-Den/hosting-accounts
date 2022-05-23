@@ -42,7 +42,7 @@ function TableFooter() {
         <td colSpan="6">
           <ul className="table-footer__list">
             {domains.map(({title, description}) => (
-              <li>
+              <li key={title}>
                 <a href="*" className="table-footer__link table-footer__link_bold">{title}</a>
                 <div className="table-footer__item">
                   <span>{description}</span>
