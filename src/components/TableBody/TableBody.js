@@ -82,7 +82,7 @@ function TableBody() {
                       <button className="table-body__button">Добавить</button> 
                     </form> : 
                   <>
-                    <span>{comment}</span>
+                    <span>{comment || 'Нет комментариев'}</span>
                     <button className="table-body__button" onClick={handleEditComment}>(Изменить)</button>
                   </>
                 }
