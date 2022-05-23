@@ -2,6 +2,19 @@
   width: 65%;
 }
 
+.table__up {
+  display: flex;
+}
+
+.table__question {
+  width: 16px;
+  height: 16px;
+}
+
+.table__question:hover {
+  cursor: pointer;
+}
+
 .table__heading {
   margin: 0;
   margin-bottom: 12px;
