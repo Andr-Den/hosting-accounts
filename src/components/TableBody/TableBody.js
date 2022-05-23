@@ -68,6 +68,7 @@ const secondBodyItems = [
 ]
 
 function TableBody() {
+
   return (
     <tbody className="table-body">
       <tr className="table-body__start">
@@ -93,7 +94,7 @@ function TableBody() {
             ))}
           </ul>
         </td>
-        <td colspan="6">
+        <td colSpan="6">
           <ul className="table-body__lists">
             {secondBodyItems.map(({name, change, off}) => (
               <li>
@@ -104,10 +105,6 @@ function TableBody() {
             ))}
           </ul>
         </td>
-      </tr>
-      <tr>
-        <td>Привязанные домены</td>
-        <td></td>
       </tr>
     </tbody>
   )
