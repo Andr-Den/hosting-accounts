@@ -3,6 +3,9 @@ import { legendItems } from "../../consts";
 
 import './TableBody.css'
 
+import badge from '../../images/badge.png'
+import power from "../../images/power.png"
+
 const firstBodyItems = [
   'IP-адрес',
   'Объем баз данных',
@@ -30,8 +33,10 @@ function TableBody() {
   }
 
   function handleAddComment() {
+    if (addInput !== '') {
     localStorage.setItem('comment', JSON.stringify(addInput))
     setComment(JSON.parse(localStorage.getItem('comment')))
+    }
   }
 
   function handleChangeAddInput(e) {
@@ -69,7 +74,8 @@ function TableBody() {
               <li><span>10.89 Mb</span></li>
               <li><span>522.43 Mb</span></li>
               <li><span>141.7 Mb</span></li>
-              <li>
+              <li className="table-body__items">
+                <img src={badge} alt="" className="table-body__icon"/>
                 {editMode ?
                   <form onSubmit={handleAddComment}>
                       <input onChange={handleChangeAddInput} defaultValue={comment}/> 
@@ -87,13 +93,15 @@ function TableBody() {
               <li>
                 <a href="*" className="table-body__link">login.hoster.ru</a>
               </li>
-              <li>
+              <li className="table-body__items">
+                <img src={power} alt="" className="table-body__icon"/>
                 <span>password</span>
                 <button className="table-body__button">(Изменить)</button>
                 <button className="table-body__button">(Выключить)</button>
               </li>
               <li><span>host</span></li>
-              <li>
+              <li className="table-body__items">
+                <img src={power} alt="" className="table-body__icon"/>
                 <span>password</span>
                 <button className="table-body__button">(Изменить)</button>
                 <button className="table-body__button">(Выключить)</button>

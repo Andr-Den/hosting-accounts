@@ -34,6 +34,7 @@
 
 .table-body__actions {
   text-align: start;
+  padding-left: 5px;
 }
 
 .table-body__link {
@@ -49,4 +50,19 @@
 
 .table-body__button:hover {
   cursor: pointer;
+}
+
+.table-body__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.table-body__icon:hover {
+  cursor: pointer;
+}
+
+.table-body__items {
+  display: flex;
+  align-items: center;
 }
