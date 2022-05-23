@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hosting-accounts/static/css/main.bfcc7666.css",
+    "main.css": "/hosting-accounts/static/css/main.98d84598.css",
     "main.js": "/hosting-accounts/static/js/main.29cd7b6c.js",
     "static/js/787.dd8018bb.chunk.js": "/hosting-accounts/static/js/787.dd8018bb.chunk.js",
     "static/media/mails.png": "/hosting-accounts/static/media/mails.e4bec7c9a337d3b7f3ec.png",
@@ -14,12 +14,12 @@
     "static/media/burger.svg": "/hosting-accounts/static/media/burger.111cfc3a3545a9ff785c.svg",
     "static/media/close.svg": "/hosting-accounts/static/media/close.2db4e4e280c0340ca0aa.svg",
     "static/media/arrow-up.svg": "/hosting-accounts/static/media/arrow-up.1b70a06730eb94b228dff18ee039ab22.svg",
-    "main.bfcc7666.css.map": "/hosting-accounts/static/css/main.bfcc7666.css.map",
+    "main.98d84598.css.map": "/hosting-accounts/static/css/main.98d84598.css.map",
     "main.29cd7b6c.js.map": "/hosting-accounts/static/js/main.29cd7b6c.js.map",
     "787.dd8018bb.chunk.js.map": "/hosting-accounts/static/js/787.dd8018bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfcc7666.css",
+    "static/css/main.98d84598.css",
     "static/js/main.29cd7b6c.js"
   ]
 }
